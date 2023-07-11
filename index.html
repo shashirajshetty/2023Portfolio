@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal POrtfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2cf3ecff79.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+ <!-- Header...................... -->
+
+    <div id="header">
+        <div id="imgid">
+            <!-- <img src="images/background-image-removebg-preview.png" alt=""> -->
+        </div>
+
+            <div class="container">
+             
+                
+              <nav>
+                <img src="images/profile.png" class="logo" alt="">
+                <ul id ="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+              </nav>  
+              <div class="header-text">
+                <h1>HI, I'm <span>Shashiraj shetty</span> <br> from India</h1>
+                <span id="element"></span>
+                <a href="images/Shashiraj Shetty Resume.pdf" download class="btn0">Download CV</a>
+              </div>
+              </div>
+              
+    </div>
+<!-- About......................... -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <img src="images/background-image.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem omnis beatae optio unde, facere impedit nisi dicta quis lorem20 explicabo repudiandae nobis fugit illum asperiores, id esse dolorem placeat quae!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Application Developemt</span><br>Designing diffrent types of applications using C, Java, Python,Flask</li>
+                            <li><span>Backend</span><br>MYSQl</li>
+                            <li><span>Web App Development</span><br>Web app Development using HTML,CSS,JS</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2023</span><br>Machine Learning Intersnhip at Varcoons Tech [LIp to speech syntheis ML project]</li>
+                            <li><span>2020-2021</span><br>AWS intern at  Teachnook [Diffrent types of cloud and hosting Techniques ]</li>
+                            <li><span>2019-2020</span><br>Full stack Inrernship</li>
+                        </ul>
+                    </div><div class="tab-contents" id ="education">
+                        <ul>
+                            <li><span>2023</span><br>BE in Computer Science from Acharya Institute of Technology Bangaluru<br>[8.5 CGPA]</li>
+                            <li><span>2019</span><br>PU from Excellent PU college Kundapura<br>[88%]</li>
+                            <li><span>2017</span><br>SSLC from Government High school Kundapura<br>[88%]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Projects ............................. -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="project-list">
+            <div> 
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p> Creating websites and web applications using technologies like HTML, CSS, and JavaScript. .</p>
+                <a href="#">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p> This involves designing, coding, testing, and debugging software applications.Using programming languages such as Java, Python, C, or JavaScript to create custom software solutions based on client requirements..</p>
+                <a href="#">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p> Creating mobile applications for various platforms such as iOS and Android..</p>
+                <a href="#">Learn more...</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY Work</h1>
+        <div class="work-list">
+            <div class="work"> 
+                <img src="images/pest2.jpg" alt="">
+                <div class="layer">
+                    <h3>Disease Detection and Pesticide Recommendation</h3>
+                    <p>Model which do the soil analysis and recommends which plant can be grown in that field for maximum
+                        yield. Diseased plant image is given as input to the model which recommends which pesticide can be used for that disease..</p>
+                    <a href="https://smart-agriculture.netlify.app
+                    " target=”_blank”><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work"> 
+                <img src="images/rec4.jpg" alt="">
+                <div class="layer">
+                    <h3>Recruitment Management System</h3>
+                    <p>Simple website which helps the job seeker to apply the job for a particular position..</p>
+                    <a href="https://github.com/shashirajshetty/Recruitme" target=”_blank”><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            
+            <div class="work"> 
+                <img src="images/work3.jpg" alt="">
+                <div class="layer">
+                    <h3>Weather Prediction</h3>
+                    <p>Android app which shows temperature,humidity,windspeed etc for the entered city from the user..</p>
+                    <a href="https://github.com/shashirajshetty/Weather-update" target=”_blank”><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+
+<!-- Contact .................................... -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <!-- <input type="hidden" name="_next" value="https://shashi/thanks.html"> -->
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>shashirajshetty22@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i>8431291181</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/s333/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shashiraj_shetty_33/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/ShashirajShet12" ><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/5c5aaa76767fdd0933e8ba25868c4800"  method="POST" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Shashiraj Shetty</p>
+        <!-- <i class="fa-solid fa-heart"></i> -->
+    </div>
+    
+</div>
+ <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+       event.currentTarget.classList.add("active-link")
+       document.getElementById(tabname).classList.add("active-tab")
+    }
+ </script>  
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Fullstack Developer','Softwarer Developer.' ],
+          typeSpeed: 100,
+        });
+      </script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
