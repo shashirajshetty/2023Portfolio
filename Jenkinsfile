@@ -2,12 +2,12 @@
 
 pipeline {
 
-    agent any {
+    agent any 
         docker {
             image 'node'
             args '-u root'
         }
-    }
+    
 
     stages {
         stage('Build') {
